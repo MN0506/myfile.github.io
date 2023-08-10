@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+
+    body{
+        padding:0;
+        margin:0;
+    }
+
+    .container{
+        min-height: 100vh;
+        position:relative;
+    }
+
+    .front{
+        overflow:auto;
+        z-index:2;
+        display:flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .back,.front{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+
+    .back{
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDgSiSuZuwU5YZJupkWFmqJwbyE8QOtqsIQ&usqp=CAU");
+        background-size: cover;
+        filter:blur(5px);
+    }
+
+    .back{
+        z-index:1;
+    }
+
+    
+
+    *{
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #d1{
+        padding:20px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+    }
+
+    #d1 h2{
+        margin-bottom:50px;
+        cursor: pointer;
+    }
+
+    #d1 a{
+        display: inline-block;
+        padding:5px;
+        text-decoration: none;
+        background: #b90a0a;
+        color:#fff;
+    }
+</style>
+</head>
+    <body>
+
+        <div class="container">
+
+            <div class="back"></div>
+
+            <div class="front">
+
+                <div id="d1">
+                    <h2> Simple Webpage with Background Blurr</h2>
+                    Visit
+
+                    <a href="#">MyWeb</a> for more Details
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+
+</html>
